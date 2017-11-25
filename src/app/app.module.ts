@@ -5,7 +5,6 @@ import {HttpClientModule} from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { ShowUserComponent } from './show-user/show-user.component';
 import { AllUsersComponent } from './all-users/all-users.component';
-import { LoginComponentComponent } from './login-component/login-component.component';
 import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
@@ -19,7 +18,7 @@ const appRoutes: Routes = [
     AppComponent,
     ShowUserComponent,
     AllUsersComponent,
-    
+
   ],
   imports: [
     BrowserModule,
