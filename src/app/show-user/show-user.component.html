@@ -1,3 +1,41 @@
-<p>
-  show-user works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 ">
+      <div class="panel panel-default">
+        <div class="panel-heading">User Profile</div>
+
+        <div class="panel-body">
+
+          <div class='col-md-6'>
+
+            <b>UserName: </b> {{user.name}}
+
+
+
+
+          </div>
+
+          <div class='col-md-6'>
+
+            <b>Email: </b>     {{user.email}}
+
+          </div>
+
+          <div class='col-md-6'>
+
+            <b>Gender: </b>     {{user.gender}}
+
+          </div>
+
+          <div class='col-md-6'>
+
+            <b>Hobbies: </b>
+                         <span *ngFor="let hobby of user.hobbies">
+            		{{hobby.name}},
+            		</span>
+
+          </div>
+
+        </div>
+
+      </div></div> </div></div>
