@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 const appRoutes: Routes = [
   { path: 'Users', component: AllUsersComponent },
   { path: 'User/:id', component: ShowUserComponent },
-  { path: 'login', component: LoginComponentComponent },
+
 
 ];
 @NgModule({
@@ -19,7 +19,7 @@ const appRoutes: Routes = [
     AppComponent,
     ShowUserComponent,
     AllUsersComponent,
-    LoginComponentComponent
+    
   ],
   imports: [
     BrowserModule,
