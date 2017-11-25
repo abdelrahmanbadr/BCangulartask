@@ -1,3 +1,40 @@
-<p>
-  all-users works!
-</p>
+<div style="text-align:center">
+  <h1>
+    All Users
+  </h1>
+
+  <div class="container">
+
+
+    <table class="table table-bordered">
+      <thead>
+      <tr class="success">
+        <th>Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Hobbies</th>
+        <th>show</th>
+      </tr>
+      </thead>
+      <tbody>
+
+      <tr *ngFor="let user of users">
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.gender}}</td>
+        <td>
+          <span *ngFor="let hobby of user.hobbies">
+            {{hobby.name}},
+            </span>
+
+        </td>
+        <td>
+          <a [routerLink] = "['/User',user.id]">Show User</a>
+          <router-outlet></router-outlet>
+        </td>
+      </tr>
+
+      </tbody>
+    </table>
+
+  </div>
